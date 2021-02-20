@@ -13,7 +13,7 @@
 	<groupId>com.lamn.microservices</groupId>
 	<artifactId>users-commons</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
-	<name>Users Commons</name>
+	<name>UsersCommons</name>
 	<description>Used to implement common classes for the users</description>
 
 	<properties>
