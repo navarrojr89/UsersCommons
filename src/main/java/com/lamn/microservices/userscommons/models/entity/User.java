@@ -51,6 +51,9 @@ public class User implements Serializable {
             uniqueConstraints = {@UniqueConstraint(columnNames = {"user_id", "role_id"})})
     private List<Role> roles;
 
+    @Column(name = "attempts")
+    private Integer attempts;
+
     /**
      * Gets id.
      *
@@ -193,5 +196,23 @@ public class User implements Serializable {
      */
     public void setRoles(List<Role> roles) {
         this.roles = roles;
+    }
+
+    /**
+     * Gets attempts.
+     *
+     * @return the attempts
+     */
+    public Integer getAttempts() {
+        return attempts;
+    }
+
+    /**
+     * Sets attempts.
+     *
+     * @param attempts the attempts
+     */
+    public void setAttempts(Integer attempts) {
+        this.attempts = attempts;
     }
 }
